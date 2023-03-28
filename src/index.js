@@ -20,7 +20,10 @@ window.addEventListener("wheel", function(event) {
     }
   }
 });
-
+function theme(){
+  let theme = document.querySelector("#theme")
+  
+}
 
 //! Send Mail
 function sendMail() {
