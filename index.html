@@ -2,6 +2,9 @@
 
 <head>
   <link rel="stylesheet" href="src/style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">(function () { emailjs.init("UPnWY4vctnMeBfDjD"); })();</script>
+
   <title>FAHRİ AYDIN CV</title>
 </head>
 
@@ -300,15 +303,14 @@
         <textarea required="" type="text" name="text" class="input" maxlength="250" id="message"></textarea>
         <label class="user-label">Mesaj</label>
       </div>
-      <div class="button" id="submit">
+      <div class="button" id="submit" onclick="sendMail()">
         <div class="box">S</div>
         <div class="box">E</div>
         <div class="box">N</div>
         <div class="box">D</div>
       </div>
-      
+
   </div>
-  <script src="https://apis.google.com/js/api.js"></script>
 
   <script src="src/index.js"></script>
 </body>
