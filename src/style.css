@@ -11,6 +11,32 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+footer {
+    display: block;
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+
+#arrow {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    width: 5%;
+    height: 5%;
+    border-radius: 80%;
+}
+
+#arrow:hover {
+    top: 88% !important;
+}
+
+#arrow a {
+    color: black;
+}
+
+
 .project:nth-child(even),
 .talent:nth-child(even),
 .certificate:nth-child(even),
@@ -18,6 +44,7 @@ nav {
 .experience:nth-child(even) {
     background-color: #DEE2E6;
 }
+
 .imageLogo {
     width: 50px;
     height: 50px;
@@ -437,7 +464,7 @@ textarea {
 
 .btn span {
     position: absolute;
-    z-index: 99;
+    z-index: 0;
     width: 150px;
     height: 50px;
     border-radius: 80px;
@@ -483,4 +510,37 @@ textarea {
 
 .btn:hover svg {
     opacity: 1;
+}
+
+#popup-wrap {
+    position: fixed;
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity ease .5;
+    z-index: 1;
+}
+
+#popup-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    opacity: 1;
+    transition: opacity ease .5;
+    z-index: 1;
+}
+
+#popup-container iframe {
+    width: 100%;
+    height: 100%;
 }
