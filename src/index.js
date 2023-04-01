@@ -47,7 +47,7 @@ function sendMail() {
   } else alert("lütfen formu doldurunuz.");
 }
 
-
+//? pop up
 function openPopup() {
   let listingElement = document.getElementById("popup-wrap");
   listingElement.style.display = "flex"
@@ -66,7 +66,7 @@ function closePopup() {
   }, 10);
 }
 
-function openJetPopup() {
+function openUE5JetFlightPopup() {
   let innerHTML = ""
   innerHTML += ` 
   <div id="popup-container">
@@ -85,7 +85,7 @@ function open3DGamePopup() {
   document.getElementById("popup-wrap").innerHTML = innerHTML
   openPopup()
 }
-function open2DPlatformGame() {
+function open2DPlatformGamePopup() {
   let innerHTML = ""
   innerHTML += ` 
   <div id="popup-container">
@@ -94,7 +94,7 @@ function open2DPlatformGame() {
   document.getElementById("popup-wrap").innerHTML = innerHTML
   openPopup()
 }
-function openZombieGame() {
+function openZombieGamePopup() {
   let innerHTML = ""
   innerHTML += ` 
   <div id="popup-container">
@@ -103,7 +103,9 @@ function openZombieGame() {
   document.getElementById("popup-wrap").innerHTML = innerHTML
   openPopup()
 }
-function buildTRlang(meInfoData){
+
+//!Build TR Website
+function buildTRlang(meInfoData,VideoProjectData,LinkedProjectData){
   //!me info data
   let meInfoHTML = ""
   for (let i = 0; i < meInfoData.length; i++) {
@@ -138,15 +140,33 @@ function buildTRlang(meInfoData){
   document.getElementById("me-info").innerHTML = meInfoHTML
 
   //!project data
-  let projectHTML = ""
-  for (let i = 0; i < projectHTML.length; i++) {
-
-  innerHTML += ` 
-  <p>${projectData[i].info}</p> 
-   `;
+  //?video
+  let VideoProjectHTML = ` <div class="header"><a name="MyProjects">Projelerim</a></div>`
+  for (let i = 0; i < VideoProjectData.length; i++) {
+    VideoProjectHTML += ` 
+  <div class="project">
+  <div class="projectName">${VideoProjectData[i].projectName}</div>
+  <div class="projectLink" id="${VideoProjectData[i].projectID}" onclick="open${VideoProjectData[i].projectID}Popup()">
+    Video
+  </div></div>
+  `;
   }
-  document.getElementById("me-info").innerHTML = projectHTML
+  //?Link 
+  document.getElementById("MyProjects-wrap").innerHTML = VideoProjectHTML
+let LinkedProjectHTML=VideoProjectHTML;
+for (let i = 0; i < LinkedProjectData.length; i++) {
+  LinkedProjectHTML  += ` 
+  <div class="project">
+  <div class="projectName">${LinkedProjectData[i].projectName}</div>
+  <div class="projectLink">
+    <a href="${LinkedProjectData[i].Link}" target="_blank">Proje linki</a>
+  </div></div>
+`;
+}
+document.getElementById("MyProjects-wrap").innerHTML = LinkedProjectHTML
+
+
 }
 
 
-buildTRlang(TR_MeInfo)
+buildTRlang(TR_MeInfo,TR_VideoProjectInfo,TR_LinkedProjectInfo)
