@@ -137,15 +137,15 @@ function buildTRlang(meInfoData){
 
   document.getElementById("me-info").innerHTML = meInfoHTML
 
-  // //!project data
-  // let projectHTML = ""
-  // for (let i = 0; i < projectHTML.length; i++) {
+  //!project data
+  let projectHTML = ""
+  for (let i = 0; i < projectHTML.length; i++) {
 
-  // innerHTML += ` 
-  // <p>${projectData[i].info}</p> 
-  //  `;
-  // }
-  // document.getElementById("me-info").innerHTML = projectHTML
+  innerHTML += ` 
+  <p>${projectData[i].info}</p> 
+   `;
+  }
+  document.getElementById("me-info").innerHTML = projectHTML
 }
 
 
