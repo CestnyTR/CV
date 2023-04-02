@@ -20,12 +20,11 @@
 //     }
 //   }
 // });
+let lang = "TR";
 
-function theme() {
-  let theme = document.querySelector("#theme")
-
+function hamburgerMenu() {
+  const hamburgerMenu = document.getElementById("hamburgerMenu");
 }
-
 //! Send Mail
 function sendMail() {
   var params = {
@@ -102,18 +101,40 @@ function openZombieGamePopup() {
   </div> `;
   document.getElementById("popup-wrap").innerHTML = innerHTML
   openPopup()
-}
+} choiceLanguage()
 
+function choiceLanguage() {
+  if (lang == "en") {
+    buildlang(TR_HamburgerMenu, TR_NavBarInfo, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
+
+    lang = "tr";
+  } else {
+    buildlang(EN_HamburgerMenu, EN_NavBarInfo, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
+
+    lang = "en";
+  }
+}
 //!Build TR Website
-function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData, talentsData, certificatesData, schoolData, experiencesData, contactsData) {
+function buildlang(hamburgerMenuData, navBarData, heads, meInfoData, VideoProjectData, LinkedProjectData, talentsData, certificatesData, schoolData, experiencesData, contactsData) {
   //!NavBar
-  let navBarHTML = ``
-  for (let i = 0; i < navBarData.length; i++) {
-    navBarHTML += ` 
-    <li><a href="#${navBarData[i].link}">${navBarData[i].page}</a></li>
+  let dropdownHTML = ``;
+  for (let i = 0; i < hamburgerMenuData.length; i++) {
+    dropdownHTML += ` 
+    <div class="dropbtn" id="${hamburgerMenuData[i].id}" onclick="${hamburgerMenuData[i].onclick}()">${hamburgerMenuData[i].page}</div>
   `;
   }
-  navBarHTML += ` <li><a href="https://github.com/CestnyTR" target="_blank">Github</a> </li>`
+  document.getElementById("dropdown-content").innerHTML = dropdownHTML
+
+  let navBarHTML = ``
+
+  for (let i = 0; i < navBarData.length - 1; i++) {
+    navBarHTML += ` 
+    <li><a href="${navBarData[i].link}" target="${navBarData[i].target}">${navBarData[i].page}</a></li>
+  `;
+  }
+  navBarHTML += ` 
+  <li><a href="https://github.com/CestnyTR" > Github </a> </li> 
+  `
   document.getElementById("menu-list").innerHTML = navBarHTML
   //!me info data
   let meInfoHTML = ""
@@ -123,7 +144,7 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
    `;
   }
   meInfoHTML += `  <button class="btn" onclick="window.scrollBy(0, 10000)">
-  <span>İLETİŞİM</span>
+  <span>${heads[0].head}</span>
   <div class="container">
     <svg height="35" width="35" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"
       class="icon">
@@ -149,13 +170,13 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 
   //!project data
   //?video
-  let VideoProjectHTML = ` <div class="header"><a name="MyProjects">Projelerim</a></div>`
+  let VideoProjectHTML = ` <div class="header"><a name="MyProjects">${heads[1].head}</a></div>`
   for (let i = 0; i < VideoProjectData.length; i++) {
     VideoProjectHTML += ` 
   <div class="project">
   <div class="projectName">${VideoProjectData[i].projectName}</div>
   <div class="projectLink" id="${VideoProjectData[i].projectID}" onclick="open${VideoProjectData[i].projectID}Popup()">
-    Video
+  ${VideoProjectData[i].linkType}
   </div></div>
   `;
   }
@@ -167,14 +188,14 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
   <div class="project">
   <div class="projectName">${LinkedProjectData[i].projectName}</div>
   <div class="projectLink">
-    <a href="${LinkedProjectData[i].Link}" target="_blank">Proje linki</a>
+    <a href="${LinkedProjectData[i].Link}" target="_blank">${LinkedProjectData[i].linkType}</a>
   </div></div>
 `;
   }
   document.getElementById("MyProjects-wrap").innerHTML = LinkedProjectHTML
 
   //!talents
-  let talentsInnerHTML = `<div class="header"><a name="talent">yeteneklerim(0-10)</a></div>`;
+  let talentsInnerHTML = `<div class="header"><a name="talent">${heads[2].head}</a></div>`;
   for (let i = 0; i < talentsData.length; i++) {
     talentsInnerHTML += ` 
   <div class="talent">
@@ -187,7 +208,7 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 
   //!certificates
 
-  let certificatesInnerHTML = `<div class="header"><a name="certificate">Sertifikalar</a></div>`;
+  let certificatesInnerHTML = `<div class="header"><a name="certificate">${heads[3].head}</a></div>`;
   for (let i = 0; i < certificatesData.length; i++) {
     certificatesInnerHTML += ` 
   <div class="certificate">
@@ -204,7 +225,7 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 
   //!School
 
-  let schoolInnerHTML = `<div class="header"><a name="school">Eğitim hayatım</a></div>`;
+  let schoolInnerHTML = `<div class="header"><a name="school">${heads[4].head}</a></div>`;
   for (let i = 0; i < schoolData.length; i++) {
     schoolInnerHTML += ` 
   <div class="school">
@@ -224,7 +245,7 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 
   //!experiences
 
-  let experiencesInnerHTML = `<div class="header"><a name="experience">Deneyimlerim</a></div>`;
+  let experiencesInnerHTML = `<div class="header"><a name="experience">${heads[5].head}</a></div>`;
   for (let i = 0; i < experiencesData.length; i++) {
     experiencesInnerHTML += ` 
   <div class="experience">
@@ -240,7 +261,7 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 
   //!contact
   let contactInnerHTML = ` <form action="">
-<div class="header">İLETİŞİM</div>`;
+<div class="header">${heads[0].head}</div>`;
   for (let i = 0; i < contactsData.length - 2; i++) {
 
     contactInnerHTML += ` 
@@ -250,7 +271,6 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
 </div>
 `;
   }
-  const submitBtn = contactsData[contactsData.length - 1].label.split("");
 
   contactInnerHTML += ` 
   <div class="input-group">
@@ -260,17 +280,18 @@ function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData
       <div class="button" id="${[contactsData[contactsData.length - 1].id]}" onclick="sendMail()">
 
 `;
+  const submitBtn = contactsData[contactsData.length - 1].label.split("");
+  // if(submitBtn.length<5){
+  //   document.getElementById("E").style.
+  // } https://stackoverflow.com/questions/11371550/change-hover-css-properties-with-javascript buradan yap
   for (var i = 0; i < submitBtn.length; i++) {
     contactInnerHTML += `
-<div class="box">${submitBtn[i]}</div>
-`; }
-contactInnerHTML+=`</div></form>`
+<div class="box" id="${submitBtn[i]}">${submitBtn[i]}</div>
+`;
+  }
+  contactInnerHTML += `</div></form>`
   document.getElementById("contact-wrap").innerHTML = contactInnerHTML
 
 }
-buildTRlang(TR_NavBarInfo, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
-
-
-
 
 
