@@ -116,11 +116,11 @@ function choiceThemeShow() {
   }, 10);
 }
 function EnglishShow(){
-  document.cookie = "EN";
+  document.cookie = "lang=EN;";
   choiceLanguage()
 }
 function TurkishShow(){
-  document.cookie = "TR";
+  document.cookie = "lang=TR;";
   choiceLanguage()
 }
 choiceLanguage()
@@ -128,12 +128,12 @@ function choiceLanguage() {
   let lang = decodeURIComponent(document.cookie);
 
   switch (lang) {
-    case "TR":
+    case "lang=TR":
       buildlang(TR_HamburgerMenu, TR_NavBarInfo, Language, Theme, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
       lang = decodeURIComponent(document.cookie);
       console.log(lang)
       break;
-    case "EN":
+    case "lang=EN":
       buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
       lang = decodeURIComponent(document.cookie);
       console.log(lang)
@@ -141,7 +141,7 @@ function choiceLanguage() {
       break;
     default:
       buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
-      document.cookie = "EN";
+      document.cookie = "lang=EN";
       lang = decodeURIComponent(document.cookie);
   }
 }
