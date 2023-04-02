@@ -9,7 +9,7 @@ const TR_NavBarInfo = [
     { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
 ]
 const TR_HamburgerMenu = [
-    { id: "Language", page: "Dil", link: "", target: "", onclick: "choiceLanguage" },
+    { id: "Language", page: "ENGLISH", link: "", target: "", onclick: "choiceLanguage" },
     { id: "Theme", page: "Tema", link: "", target: "", onclick: "choiceTheme" }
 ]
 const TR_heads=[
@@ -80,7 +80,7 @@ const TR_Contacts = [
     { id: "surname", label: "Soyad", minlength: "5", maxlength: "10" },
     { id: "email", label: "Mail", minlength: "5", maxlength: "20" },
     { id: "message", label: "Mesaj", maxlength: "250" },
-    { id: "submit", label: "GÖNDER" }
+    { id: "submit", label: "MAİL GÖNDER" }
 ]
 
 //!Eng
@@ -94,7 +94,7 @@ const EN_NavBarInfo = [
     { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
 ]
 const EN_HamburgerMenu = [
-    { id: "Language", page: "Language", link: "", target: "", onclick: "choiceLanguage" },
+    { id: "Language", page: "TURKISH", link: "", target: "", onclick: "choiceLanguage" },
     { id: "Theme", page: "Theme", link: "", target: "", onclick: "choiceTheme" }
 ]
 const EN_heads=[
@@ -149,5 +149,5 @@ const EN_Contacts = [
     { id: "surname", label: "SURNAME", minlength: "5", maxlength: "10" },
     { id: "email", label: "Mail", minlength: "5", maxlength: "20" },
     { id: "message", label: "MESSAGE", maxlength: "250" },
-    { id: "submit", label: "SEND" }
+    { id: "submit", label: "SEND MAIL" }
 ]

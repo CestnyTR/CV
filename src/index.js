@@ -280,15 +280,14 @@ function buildlang(hamburgerMenuData, navBarData, heads, meInfoData, VideoProjec
       <div class="button" id="${[contactsData[contactsData.length - 1].id]}" onclick="sendMail()">
 
 `;
-  const submitBtn = contactsData[contactsData.length - 1].label.split("");
-  // if(submitBtn.length<5){
-  //   document.getElementById("E").style.
-  // } https://stackoverflow.com/questions/11371550/change-hover-css-properties-with-javascript buradan yap
-  for (var i = 0; i < submitBtn.length; i++) {
-    contactInnerHTML += `
-<div class="box" id="${submitBtn[i]}">${submitBtn[i]}</div>
+  contactInnerHTML += `
+<button class="learn-more" onclick="sendMail()">
+<span class="circle" aria-hidden="true">
+<span class="icon arrow"></span>
+</span>
+<span class="button-text">${contactsData[contactsData.length - 1].label}</span>
+</button>
 `;
-  }
   contactInnerHTML += `</div></form>`
   document.getElementById("contact-wrap").innerHTML = contactInnerHTML
 
