@@ -181,7 +181,7 @@ function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads
 
       for (let i = 0; i < themeData.length; i++) {
         navBarHTML += ` 
-    <div class="dropbtnTheme" id="${themeData[i].id}">${themeData[i].theme}</div>
+    <div class="dropbtnTheme" id="${themeData[i].id}" onclick="${themeData[i].theme}Theme()">${themeData[i].theme}</div>
   `;
       } navBarHTML += `</div> `
     }
@@ -346,5 +346,7 @@ function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads
   document.getElementById("contact-wrap").innerHTML = contactInnerHTML
 
 }
-
-
+//! Theme
+function DarkTheme(){
+ document.body.style.backgroundColor="#414141";
+}

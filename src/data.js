@@ -102,8 +102,8 @@ const Language = [
     { id: 2, lang: "TR", Language: "Turkish" }
 ]
 const Theme = [
-    { id: 1, theme:"dark" },
-    { id: 2, theme:"light" }
+    { id: 1, theme:"Dark" },
+    { id: 2, theme:"Light" }
 ]
 
 const EN_heads = [
