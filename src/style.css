@@ -314,12 +314,12 @@ a:active {
 
 
 
-.experienceLength {
+.experienceTime {
     height: 100%;
     width: 30%;
 }
 
-.workplace {
+.business {
 
     height: 100%;
     width: 40%;
@@ -332,7 +332,7 @@ a:active {
 }
 
 /*! Form */
-#contant-wrap {
+#contact-wrap {
     display: flex;
     margin-left: 5%;
     flex-direction: column;
@@ -408,7 +408,7 @@ textarea {
 }
 
 .box:before {
-    content: "M";
+    content: "E";
     position: absolute;
     top: 0;
     background: #0f0f0f;
@@ -423,18 +423,26 @@ textarea {
 
 .box:nth-child(2)::before {
     transform: translateY(-100%);
-    content: 'A';
+    width: 35px;
+    content: '-';
 }
 
 .box:nth-child(3)::before {
-    content: 'I';
+    content: 'M';
 }
 
 .box:nth-child(4)::before {
     transform: translateY(-100%);
+    content: 'A';
+}
+.box:nth-child(5)::before {
+    transform: translateY(-100%);
+    content: 'I';
+}
+.box:nth-child(6)::before {
+    transform: translateY(-100%);
     content: 'L';
 }
-
 
 
 .button:hover .box:before {

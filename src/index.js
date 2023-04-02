@@ -52,8 +52,8 @@ function openPopup() {
   let listingElement = document.getElementById("popup-wrap");
   listingElement.style.display = "flex"
 
-  setTimeout(() => {  
-    listingElement.style.backdropFilter=" blur(4px)";
+  setTimeout(() => {
+    listingElement.style.backdropFilter = " blur(4px)";
 
     listingElement.style.opacity = "1"
   }, 10);
@@ -105,7 +105,16 @@ function openZombieGamePopup() {
 }
 
 //!Build TR Website
-function buildTRlang(meInfoData,VideoProjectData,LinkedProjectData){
+function buildTRlang(navBarData, meInfoData, VideoProjectData, LinkedProjectData, talentsData, certificatesData, schoolData, experiencesData, contactsData) {
+  //!NavBar
+  let navBarHTML = ``
+  for (let i = 0; i < navBarData.length; i++) {
+    navBarHTML += ` 
+    <li><a href="#${navBarData[i].link}">${navBarData[i].page}</a></li>
+  `;
+  }
+  navBarHTML += ` <li><a href="https://github.com/CestnyTR" target="_blank">Github</a> </li>`
+  document.getElementById("menu-list").innerHTML = navBarHTML
   //!me info data
   let meInfoHTML = ""
   for (let i = 0; i < meInfoData.length; i++) {
@@ -113,7 +122,7 @@ function buildTRlang(meInfoData,VideoProjectData,LinkedProjectData){
   <p>${meInfoData[i].info}</p> 
    `;
   }
-  meInfoHTML+= `  <button class="btn" onclick="window.scrollBy(0, 10000)">
+  meInfoHTML += `  <button class="btn" onclick="window.scrollBy(0, 10000)">
   <span>İLETİŞİM</span>
   <div class="container">
     <svg height="35" width="35" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"
@@ -136,7 +145,6 @@ function buildTRlang(meInfoData,VideoProjectData,LinkedProjectData){
     </svg>
   </div>
 </button>`
-
   document.getElementById("me-info").innerHTML = meInfoHTML
 
   //!project data
@@ -153,20 +161,116 @@ function buildTRlang(meInfoData,VideoProjectData,LinkedProjectData){
   }
   //?Link 
   document.getElementById("MyProjects-wrap").innerHTML = VideoProjectHTML
-let LinkedProjectHTML=VideoProjectHTML;
-for (let i = 0; i < LinkedProjectData.length; i++) {
-  LinkedProjectHTML  += ` 
+  let LinkedProjectHTML = VideoProjectHTML;
+  for (let i = 0; i < LinkedProjectData.length; i++) {
+    LinkedProjectHTML += ` 
   <div class="project">
   <div class="projectName">${LinkedProjectData[i].projectName}</div>
   <div class="projectLink">
     <a href="${LinkedProjectData[i].Link}" target="_blank">Proje linki</a>
   </div></div>
 `;
+  }
+  document.getElementById("MyProjects-wrap").innerHTML = LinkedProjectHTML
+
+  //!talents
+  let talentsInnerHTML = `<div class="header"><a name="talent">yeteneklerim(0-10)</a></div>`;
+  for (let i = 0; i < talentsData.length; i++) {
+    talentsInnerHTML += ` 
+  <div class="talent">
+  <div class="talentName">${talentsData[i].talentName}</div>
+  <div class="talentPoint">${talentsData[i].talentPoint}</div>
+</div>
+`;
+  }
+  document.getElementById("talents-wrap").innerHTML = talentsInnerHTML
+
+  //!certificates
+
+  let certificatesInnerHTML = `<div class="header"><a name="certificate">Sertifikalar</a></div>`;
+  for (let i = 0; i < certificatesData.length; i++) {
+    certificatesInnerHTML += ` 
+  <div class="certificate">
+      <div class="certificateDate">${certificatesData[i].certificateDate}</div>
+      <div class="certificateName">${certificatesData[i].certificateName}</div>
+      <div class="certificateNumber">${certificatesData[i].certificateNo}</div>
+      <div class="certificationInstitution">
+      ${certificatesData[i].certificationInstitution}
+      </div>
+    </div>
+`;
+  }
+  document.getElementById("certificates-wrap").innerHTML = certificatesInnerHTML
+
+  //!School
+
+  let schoolInnerHTML = `<div class="header"><a name="school">Eğitim hayatım</a></div>`;
+  for (let i = 0; i < schoolData.length; i++) {
+    schoolInnerHTML += ` 
+  <div class="school">
+      <div class="schoolYear">${schoolData[i].schoolYear}</div>
+      <div class="schoolName">
+        <p>
+        ${schoolData[i].schoolName}
+        </p>
+        <p>  ${schoolData[i].schoolFaculty}</p>
+        <p>  ${schoolData[i].schoolSection}</p>
+      </div>
+      <div class="schoolDegree">${schoolData[i].schoolDegree}</div>
+    </div>
+`;
+  }
+  document.getElementById("school-wrap").innerHTML = schoolInnerHTML
+
+  //!experiences
+
+  let experiencesInnerHTML = `<div class="header"><a name="experience">Deneyimlerim</a></div>`;
+  for (let i = 0; i < experiencesData.length; i++) {
+    experiencesInnerHTML += ` 
+  <div class="experience">
+      <div class="experience">
+        <div class="experienceTime"><p>${experiencesData[i].experiencesTime}</p></div>
+        <div class="business"><p>${experiencesData[i].business}</p> <p>${experiencesData[i].departman}</p></div>
+        <div class="job"><p>${experiencesData[i].job}</p></div>
+      </div>
+  </div>
+`;
+  }
+  document.getElementById("experiences-wrap").innerHTML = experiencesInnerHTML
+
+  //!contact
+  let contactInnerHTML = ` <form action="">
+<div class="header">İLETİŞİM</div>`;
+  for (let i = 0; i < contactsData.length - 2; i++) {
+
+    contactInnerHTML += ` 
+  <div class="input-group">
+  <input required="" type="text" name="text" autocomplete="off" class="input" id="${[contactsData[i].id]}" minlength="${[contactsData[i].minlength]}" maxlength="${[contactsData[i].maxlength]}">
+  <label class="user-label">${[contactsData[i].label]}</label>
+</div>
+`;
+  }
+  const submitBtn = contactsData[contactsData.length - 1].label.split("");
+
+  contactInnerHTML += ` 
+  <div class="input-group">
+  <textarea required="" type="text" name="text" class="input" maxlength="${[contactsData[contactsData.length - 2].maxlength]}" id="${[contactsData.slice(-2).id]}"></textarea>
+        <label class="user-label">${[contactsData[contactsData.length - 2].label]}</label>
+      </div>
+      <div class="button" id="${[contactsData[contactsData.length - 1].id]}" onclick="sendMail()">
+
+`;
+  for (var i = 0; i < submitBtn.length; i++) {
+    contactInnerHTML += `
+<div class="box">${submitBtn[i]}</div>
+`; }
+contactInnerHTML+=`</div></form>`
+  document.getElementById("contact-wrap").innerHTML = contactInnerHTML
+
 }
-document.getElementById("MyProjects-wrap").innerHTML = LinkedProjectHTML
+buildTRlang(TR_NavBarInfo, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
 
 
-}
 
 
-buildTRlang(TR_MeInfo,TR_VideoProjectInfo,TR_LinkedProjectInfo)
+
