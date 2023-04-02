@@ -20,8 +20,6 @@
 //     }
 //   }
 // });
-let lang = "TR";
-
 function hamburgerMenu() {
   const hamburgerMenu = document.getElementById("hamburgerMenu");
 }
@@ -101,32 +99,56 @@ function openZombieGamePopup() {
   </div> `;
   document.getElementById("popup-wrap").innerHTML = innerHTML
   openPopup()
-} choiceLanguage()
+}
+function choiceLanguageShow() {
+  let listingElement = document.getElementById("langShow");
+  listingElement.style.display = "flex";
+  setTimeout(() => {
+    listingElement.style.opacity = "1"
+  }, 10);
+}
+function choiceThemeShow() {
+  let listingElement = document.getElementById("themeShow");
+  listingElement.style.display = "flex"
 
+  setTimeout(() => {
+    listingElement.style.opacity = "1"
+  }, 10);
+}
+function EnglishShow(){
+  document.cookie = "EN";
+  choiceLanguage()
+}
+function TurkishShow(){
+  document.cookie = "TR";
+  choiceLanguage()
+}
+choiceLanguage()
 function choiceLanguage() {
-  if (lang == "en") {
-    buildlang(TR_HamburgerMenu, TR_NavBarInfo, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
+  let lang = decodeURIComponent(document.cookie);
 
-    lang = "tr";
-  } else {
-    buildlang(EN_HamburgerMenu, EN_NavBarInfo, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
+  switch (lang) {
+    case "TR":
+      buildlang(TR_HamburgerMenu, TR_NavBarInfo, Language, Theme, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
+      lang = decodeURIComponent(document.cookie);
+      console.log(lang)
+      break;
+    case "EN":
+      buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
+      lang = decodeURIComponent(document.cookie);
+      console.log(lang)
 
-    lang = "en";
+      break;
+    default:
+      buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
+      document.cookie = "EN";
+      lang = decodeURIComponent(document.cookie);
   }
 }
 //!Build TR Website
-function buildlang(hamburgerMenuData, navBarData, heads, meInfoData, VideoProjectData, LinkedProjectData, talentsData, certificatesData, schoolData, experiencesData, contactsData) {
+function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads, meInfoData, VideoProjectData, LinkedProjectData, talentsData, certificatesData, schoolData, experiencesData, contactsData) {
   //!NavBar
-  let dropdownHTML = ``;
-  for (let i = 0; i < hamburgerMenuData.length; i++) {
-    dropdownHTML += ` 
-    <div class="dropbtn" id="${hamburgerMenuData[i].id}" onclick="${hamburgerMenuData[i].onclick}()">${hamburgerMenuData[i].page}</div>
-  `;
-  }
-  document.getElementById("dropdown-content").innerHTML = dropdownHTML
-
   let navBarHTML = ``
-
   for (let i = 0; i < navBarData.length - 1; i++) {
     navBarHTML += ` 
     <li><a href="${navBarData[i].link}" target="${navBarData[i].target}">${navBarData[i].page}</a></li>
@@ -135,7 +157,39 @@ function buildlang(hamburgerMenuData, navBarData, heads, meInfoData, VideoProjec
   navBarHTML += ` 
   <li><a href="https://github.com/CestnyTR" > Github </a> </li> 
   `
+  {/* <button class="dropbtn">Language</button><div id="dropdown-content"></div> */ }
+  navBarHTML += `  <div class="dropdown">
+  <button class="dropbtn"><img src="images/hamburger.png" alt="hamburger"></button>
+  <div id="dropdown-content"> `;
+
+  for (let i = 0; i < hamburgerMenuData.length; i++) {
+    navBarHTML += ` 
+  <div class="dropbtn" id="${hamburgerMenuData[i].id}" onclick="${hamburgerMenuData[i].onclick}Show()">${hamburgerMenuData[i].page}</div>
+`;
+    if (hamburgerMenuData[i].id == "Language") {
+      navBarHTML+=`<div id="langShow">`;
+      for (let i = 0; i < languageData.length; i++) {
+        navBarHTML += ` 
+        
+    <div class="dropbtnLang" id="${languageData[i].id}" onclick="${languageData[i].Language}Show()">${languageData[i].Language}</div>
+  `;
+      }
+      navBarHTML += `</div> `
+    }
+    if (hamburgerMenuData[i].id == "Theme") {
+      navBarHTML+=`<div id="themeShow">`;
+
+      for (let i = 0; i < themeData.length; i++) {
+        navBarHTML += ` 
+    <div class="dropbtnTheme" id="${themeData[i].id}">${themeData[i].theme}</div>
+  `;
+      } navBarHTML += `</div> `
+    }
+  }
+
+  navBarHTML += `</div>`
   document.getElementById("menu-list").innerHTML = navBarHTML
+
   //!me info data
   let meInfoHTML = ""
   for (let i = 0; i < meInfoData.length; i++) {

@@ -9,16 +9,16 @@ const TR_NavBarInfo = [
     { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
 ]
 const TR_HamburgerMenu = [
-    { id: "Language", page: "ENGLISH", link: "", target: "", onclick: "choiceLanguage" },
+    { id: "Language", page: "Dil", link: "", target: "", onclick: "choiceLanguage" },
     { id: "Theme", page: "Tema", link: "", target: "", onclick: "choiceTheme" }
 ]
-const TR_heads=[
-    { id:1,head:"İLETİŞİM"},
-    { id:2,head:"PROJELERIM"},
-    { id:3,head:"YETENEKLERIM(0-10)"},
-    { id:4,head:"SERTIFIKALAR"},
-    { id:5,head:"EĞITIM HAYATIM"},
-    { id:6,head:"DENEYIMLERIM"},
+const TR_heads = [
+    { id: 1, head: "İLETİŞİM" },
+    { id: 2, head: "PROJELERIM" },
+    { id: 3, head: "YETENEKLERIM(0-10)" },
+    { id: 4, head: "SERTIFIKALAR" },
+    { id: 5, head: "EĞITIM HAYATIM" },
+    { id: 6, head: "DENEYIMLERIM" },
 ]
 
 const TR_MeInfo = [
@@ -94,16 +94,25 @@ const EN_NavBarInfo = [
     { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
 ]
 const EN_HamburgerMenu = [
-    { id: "Language", page: "TURKISH", link: "", target: "", onclick: "choiceLanguage" },
+    { id: "Language", page: "Language", link: "", target: "", onclick: "choiceLanguage" },
     { id: "Theme", page: "Theme", link: "", target: "", onclick: "choiceTheme" }
 ]
-const EN_heads=[
-    { id:1,head:"CONTACT"},
-    { id:2,head:"MY PROJECT"},
-    { id:3,head:"TALENTS(0-10)"},
-    { id:4,head:"CERTIFICATE"},
-    { id:5,head:"ACEDEMIC LİFE"},
-    { id:6,head:"EXPERIENCES"},
+const Language = [
+    { id: 1, lang: "EN", Language: "English" },
+    { id: 2, lang: "TR", Language: "Turkish" }
+]
+const Theme = [
+    { id: 1, theme:"dark" },
+    { id: 2, theme:"light" }
+]
+
+const EN_heads = [
+    { id: 1, head: "CONTACT" },
+    { id: 2, head: "MY PROJECT" },
+    { id: 3, head: "TALENTS(0-10)" },
+    { id: 4, head: "CERTIFICATE" },
+    { id: 5, head: "ACEDEMIC LİFE" },
+    { id: 6, head: "EXPERIENCES" },
 ]
 
 const EN_MeInfo = [

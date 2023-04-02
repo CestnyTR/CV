@@ -577,11 +577,11 @@ button {
     height: 100%;
 }
 
-
+/* drop down */
 .dropbtn {
     cursor: pointer;
-
     padding: 16px;
+    
     font-size: 16px;
     border: none;
 }
@@ -609,9 +609,37 @@ button {
 }
 
 .dropbtn:hover {
+    background-color: whitesmoke;
     margin-right: 0;
 }
 
 .dropdown:hover #dropdown-content {
+    right: 2%;
     display: block;
 }
+
+
+.dropbtnLang {
+
+    cursor: pointer;
+    padding: 16px;    
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtnTheme {
+
+    cursor: pointer;
+    padding: 16px;    
+    font-size: 16px;
+    border: none;
+}
+#langShow{
+    display: none;
+    opacity: 0;
+}
+#themeShow{
+    display: none;
+    opacity: 0;
+}
+
