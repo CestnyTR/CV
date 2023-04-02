@@ -115,11 +115,11 @@ function choiceThemeShow() {
     listingElement.style.opacity = "1"
   }, 10);
 }
-function EnglishShow(){
+function EnglishShow() {
   document.cookie = "lang=EN;";
   choiceLanguage()
 }
-function TurkishShow(){
+function TurkishShow() {
   document.cookie = "lang=TR;";
   choiceLanguage()
 }
@@ -141,7 +141,7 @@ function choiceLanguage() {
       break;
     default:
       buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
-      document.cookie = "lang=EN";
+      document.cookie = "lang=EN;";
       lang = decodeURIComponent(document.cookie);
   }
 }
@@ -167,7 +167,7 @@ function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads
   <div class="dropbtn" id="${hamburgerMenuData[i].id}" onclick="${hamburgerMenuData[i].onclick}Show()">${hamburgerMenuData[i].page}</div>
 `;
     if (hamburgerMenuData[i].id == "Language") {
-      navBarHTML+=`<div id="langShow">`;
+      navBarHTML += `<div id="langShow">`;
       for (let i = 0; i < languageData.length; i++) {
         navBarHTML += ` 
         
@@ -177,7 +177,7 @@ function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads
       navBarHTML += `</div> `
     }
     if (hamburgerMenuData[i].id == "Theme") {
-      navBarHTML+=`<div id="themeShow">`;
+      navBarHTML += `<div id="themeShow">`;
 
       for (let i = 0; i < themeData.length; i++) {
         navBarHTML += ` 
@@ -346,7 +346,85 @@ function buildlang(hamburgerMenuData, navBarData, languageData, themeData, heads
   document.getElementById("contact-wrap").innerHTML = contactInnerHTML
 
 }
+
 //! Theme
-function DarkTheme(){
- document.body.style.backgroundColor="#414141";
+function DarkTheme() {
+  document.cookie = "theme=DarkTheme;";
+
+  document.body.style.backgroundColor = "#414141";
+  const project = document.querySelectorAll(".project:nth-child(even)")
+  for (let i = 0; i < project.length; i++) {
+    project[i].style.backgroundColor = "#393939";
+  }
+  const talent = document.querySelectorAll(".talent:nth-child(even)")
+  for (let i = 0; i < talent.length; i++) {
+    talent[i].style.backgroundColor = "#393939";
+  } const certificate = document.querySelectorAll(".certificate:nth-child(even)")
+  for (let i = 0; i < certificate.length; i++) {
+    certificate[i].style.backgroundColor = "#393939";
+  }
+  const school = document.querySelectorAll(".school:nth-child(even)")
+  for (let i = 0; i < school.length; i++) {
+    school[i].style.backgroundColor = "#393939";
+  }
+  const experience = document.querySelectorAll(".experience:nth-child(even)")
+  for (let i = 0; i < experience.length; i++) {
+    experience[i].style.backgroundColor = "#393939";
+  }
+  const textC = document.getElementsByTagName("*");
+  for (let i = 0, max = textC.length; i < max; i++) {
+    textC[i].style.color = "whitesmoke";
+  }
 }
+function LightTheme() {
+  document.cookie = "theme=LightTheme;";
+
+  document.body.style.backgroundColor = "#E9ECEF";
+  const project = document.querySelectorAll(".project:nth-child(even)")
+  for (let i = 0; i < project.length; i++) {
+    project[i].style.backgroundColor = "#DEE2E6";
+  }
+  const talent = document.querySelectorAll(".talent:nth-child(even)")
+  for (let i = 0; i < talent.length; i++) {
+    talent[i].style.backgroundColor = "#DEE2E6";
+  } const certificate = document.querySelectorAll(".certificate:nth-child(even)")
+  for (let i = 0; i < certificate.length; i++) {
+    certificate[i].style.backgroundColor = "#DEE2E6";
+  }
+  const school = document.querySelectorAll(".school:nth-child(even)")
+  for (let i = 0; i < school.length; i++) {
+    school[i].style.backgroundColor = "#DEE2E6";
+  }
+  const experience = document.querySelectorAll(".experience:nth-child(even)")
+  for (let i = 0; i < experience.length; i++) {
+    experience[i].style.backgroundColor = "#DEE2E6";
+  }
+  const textC = document.getElementsByTagName("*");
+  for (let i = 0, max = textC.length; i < max; i++) {
+    textC[i].style.color = "black";
+  }
+}
+// choiceTheme();
+// function choiceTheme() {
+//   let theme=decodeURIComponent(document.cookie)
+//   switch (theme) {
+//     case "theme=DarkTheme;":
+//       document.cookie = "theme=DarkTheme;";
+      
+//       DarkTheme()
+//       break;
+//       case "theme=LightTheme":
+//         document.cookie = "theme=LightTheme;";
+
+//         LightTheme()
+//         break;
+//     default:
+//       document.cookie = "theme=LightTheme;";
+
+//       LightTheme()
+
+//       break;
+//   }
+// }
+ 
+
