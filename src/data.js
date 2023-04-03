@@ -6,7 +6,7 @@ const TR_NavBarInfo = [
     { id: 4, page: "Sertifikalar", link: "#certificate", target: "" },
     { id: 5, page: "Okul", link: "#school", target: "" },
     { id: 6, page: "Deneyimlerim", link: "#experience", target: "" },
-    { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
+    { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" }
 ]
 const TR_HamburgerMenu = [
     { id: "Language", page: "Dil", link: "", target: "", onclick: "choiceLanguage" },
@@ -18,7 +18,7 @@ const TR_heads = [
     { id: 3, head: "YETENEKLERIM(0-10)" },
     { id: 4, head: "SERTIFIKALAR" },
     { id: 5, head: "EĞITIM HAYATIM" },
-    { id: 6, head: "DENEYIMLERIM" },
+    { id: 6, head: "DENEYIMLERIM" }
 ]
 
 const TR_MeInfo = [
@@ -27,18 +27,18 @@ const TR_MeInfo = [
     { id: 3, info: "  Bu sozlerle sadece yaptigim işlerden değil ayni zamanda neyi nasil elde etmek istedigime de vurgulama amacina ulasarak bitirecegimize emin olabilirsiniz: Kaliteli projelerde profesyonel sonuclara ulasmayla beraber orta-ust duzeydeki teknoloji becerisiyle donatılmış bir insan olarak tam anlaminda kariyerime devam ediyorum!" }
 ]
 const TR_VideoProjectInfo = [
-    { id: 1, projectName: "Zombi Oyunu", projectID: "ZombieGame", linkType: "Video" },
-    { id: 2, projectName: "2D Platform Oyunu", projectID: "2DPlatformGame", linkType: "Video" },
-    { id: 3, projectName: "3D Unity oyunu", projectID: "3DGame", linkType: "Video" },
-    { id: 4, projectName: "3D UNREAL ENGİNE 5 Jet Uçuş Oyunu", projectID: "UE5JetFlight", linkType: "Video" },
+    { id: 1, projectName: "Zombi Oyunu", projectID: "ZombieGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/I_yWLWi_Zm8" },
+    { id: 2, projectName: "2D Platform Oyunu", projectID: "2DPlatformGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/q3xA2NjmzSk" },
+    { id: 3, projectName: "3D Unity oyunu", projectID: "3DGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/OyGkYBsPvCE"  },
+    { id: 4, projectName: "3D UNREAL ENGİNE 5 Jet Uçuş Oyunu", projectID: "UE5JetFlight", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/HqkyMcq5jUo" }
 ]
 const TR_LinkedProjectInfo = [
     { id: 1, projectName: "Photoshop Tasarımlarım", Link: "https://drive.google.com/drive/folders/1RTy6SjzyMEfllyCWfEzgsJf28Xt7YDAz", linkType: "Proje Linki" },
-    { id: 2, projectName: "Java tabanlı kütüphane otomasyon sistemi", Link: "https://github.com/CestnyTR/JavaLibraryOtomation", linkType: "Proje Linki" },
-    { id: 3, projectName: "C# çiftlik otomasyon sistemi", Link: "https://github.com/CestnyTR/CiftlikOtomasyon", linkType: "Proje Linki" },
-    { id: 4, projectName: "GTA5 rp sunucuları için JS ile hazırlanmış market script", Link: "https://github.com/CestnyTR/GTA5-MARKET-SC", linkType: "Proje Linki" },
-    { id: 5, projectName: "Word ile klavuz düzenleme", Link: "https://github.com/CestnyTR/handbookOfWordpress", linkType: "Proje Linki" },
-    { id: 6, projectName: "C# ASP.NET ile hazırlanmış Kullanıcı Kayıt/giriş/List sitesi", Link: "https://github.com/CestnyTR/user-registary-inputs", linkType: "Proje Linki" }
+    { id: 2, projectName: "Java tabanlı kütüphane otomasyon sistemi", Link: "https://github1s.com/CestnyTR/JavaLibraryOtomation", linkType: "Proje Linki" },
+    { id: 3, projectName: "C# çiftlik otomasyon sistemi", Link: "https://github1s.com/CestnyTR/CiftlikOtomasyon", linkType: "Proje Linki" },
+    { id: 4, projectName: "GTA5 rp sunucuları için JS ile hazırlanmış market script", Link: "https://github1s.com/CestnyTR/GTA5-MARKET-SC", linkType: "Proje Linki" },
+    { id: 5, projectName: "Word ile klavuz düzenleme", Link: "https://github1s.com/CestnyTR/handbookOfWordpress", linkType: "Proje Linki" },
+    { id: 6, projectName: "C# ASP.NET ile hazırlanmış Kullanıcı Kayıt/giriş/List sitesi", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Proje Linki" }
 
 ]
 
@@ -73,7 +73,7 @@ const TR_experiences = [
     { id: 2, experiencesTime: "1 Ay", business: "Star Bilgisayar", departman: "Teknik Servis", job: "Stajyer" },
     { id: 3, experiencesTime: "1 Ay", business: "Mersin/Mut Belediyesi", departman: "Bilgi İşlem", job: "Stajyer" },
     { id: 4, experiencesTime: "1 Ay", business: "ESNAF VE SANATKARLAR KREDİ VE KEFALET KOOPERATİFİ", departman: "Bilgi İşlem", job: "Stajyer" },
-    { id: 5, experiencesTime: "+4 Ay", business: "ARCSIM-Formula Simulator, Show Car, Airbus Simulator, Ralli Simulator. Motion Systems", departman: "Bilgi işlem", job: "Bilgisayar Programcısı" },
+    { id: 5, experiencesTime: "+4 Ay", business: "ARCSIM-Formula Simulator, Show Car, Airbus Simulator, Ralli Simulator. Motion Systems", departman: "Bilgi işlem", job: "Bilgisayar Programcısı" }
 ]
 const TR_Contacts = [
     { id: "firstName", label: "İsim", minlength: "5", maxlength: "10" },
@@ -91,7 +91,7 @@ const EN_NavBarInfo = [
     { id: 4, page: "Certificate", link: "#certificate", target: "" },
     { id: 5, page: "Acedemic", link: "#school", target: "" },
     { id: 6, page: "Experiences", link: "#experience", target: "" },
-    { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" },
+    { id: 7, page: "Github", link: "https://github.com/CestnyTR", target: "_blank" }
 ]
 const EN_HamburgerMenu = [
     { id: "Language", page: "Language", link: "", target: "", onclick: "choiceLanguage" },
@@ -112,7 +112,7 @@ const EN_heads = [
     { id: 3, head: "TALENTS(0-10)" },
     { id: 4, head: "CERTIFICATE" },
     { id: 5, head: "ACEDEMIC LİFE" },
-    { id: 6, head: "EXPERIENCES" },
+    { id: 6, head: "EXPERIENCES" }
 ]
 
 const EN_MeInfo = [
@@ -121,18 +121,18 @@ const EN_MeInfo = [
     { id: 3, info: "With these words, you can be sure that we will finish by emphasizing not only the work I do, but also what I want to achieve and how: I continue my career fully as a person equipped with medium-high level technology skills, together with achieving professional results in quality projects!" }
 ]
 const EN_VideoProjectInfo = [
-    { id: 1, projectName: "Zombie Game", projectID: "ZombieGame", linkType: "Video" },
-    { id: 2, projectName: "2D Platform Game", projectID: "2DPlatformGame", linkType: "Video" },
-    { id: 3, projectName: "3D Unity Game", projectID: "3DGame", linkType: "Video" },
-    { id: 4, projectName: "3D UNREAL ENGİNE 5 Fighter Jet Game", projectID: "UE5JetFlight", linkType: "Video" },
+    { id: 1, projectName: "Zombie Game", projectID: "ZombieGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/I_yWLWi_Zm8" },
+    { id: 2, projectName: "2D Platform Game", projectID: "2DPlatformGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/q3xA2NjmzSk" },
+    { id: 3, projectName: "3D Unity Game", projectID: "3DGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/OyGkYBsPvCE" },
+    { id: 4, projectName: "3D UNREAL ENGİNE 5 Fighter Jet Game", projectID: "UE5JetFlight", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/HqkyMcq5jUo" }
 ]
 const EN_LinkedProjectInfo = [
     { id: 1, projectName: "Photoshop Desings", Link: "https://drive.google.com/drive/folders/1RTy6SjzyMEfllyCWfEzgsJf28Xt7YDAz", linkType: "Project Link" },
-    { id: 2, projectName: "Java Based Library Automation System", Link: "https://github.com/CestnyTR/JavaLibraryOtomation", linkType: "Project Link" },
-    { id: 3, projectName: "C# Farm Automation System", Link: "https://github.com/CestnyTR/CiftlikOtomasyon", linkType: "Project Link" },
-    { id: 4, projectName: "Market script prepared with JS for GTA 5 rp servers", Link: "https://github.com/CestnyTR/GTA5-MARKET-SC", linkType: "Project Link" },
-    { id: 5, projectName: "Guide Book", Link: "https://github.com/CestnyTR/handbookOfWordpress", linkType: "Project Link" },
-    { id: 6, projectName: "User Registration/Login/List site prepared with C# ASP.NET", Link: "https://github.com/CestnyTR/user-registary-inputs", linkType: "Project Link" }
+    { id: 2, projectName: "Java Based Library Automation System", Link: "https://github1s.com/CestnyTR/JavaLibraryOtomation", linkType: "Project Link" },
+    { id: 3, projectName: "C# Farm Automation System", Link: "https://github1s.com/CestnyTR/CiftlikOtomasyon", linkType: "Project Link" },
+    { id: 4, projectName: "Market script prepared with JS for GTA 5 rp servers", Link: "https://github1s.com/CestnyTR/GTA5-MARKET-SC", linkType: "Project Link" },
+    { id: 5, projectName: "Guide Book", Link: "https://github1s.com/CestnyTR/handbookOfWordpress", linkType: "Project Link" },
+    { id: 6, projectName: "User Registration/Login/List site prepared with C# ASP.NET", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Project Link" }
 
 ]
 
@@ -151,7 +151,7 @@ const EN_experiences = [
     { id: 2, experiencesTime: "1 Month", business: "Star Computer", departman: "technical service", job: "Intern" },
     { id: 3, experiencesTime: "1 Month", business: "Mersin/Mut city hall", departman: "Information Technology(IT)", job: "Intern" },
     { id: 4, experiencesTime: "1 Month", business: "SMALL BUSINESS AND ARTISAN CREDIT AND GUARANTEED COOPERATIVE", departman: "Information Technology(IT)", job: "Intern" },
-    { id: 5, experiencesTime: "+4 Month", business: "ARCSIM - Formula Simulator, Show Car, Airbus Simulator, Ralli Simulator. Motion Systems", departman: "Information Technology(IT)", job: "Computer Programmer" },
+    { id: 5, experiencesTime: "+4 Month", business: "ARCSIM - Formula Simulator, Show Car, Airbus Simulator, Ralli Simulator. Motion Systems", departman: "Information Technology(IT)", job: "Computer Programmer" }
 ]
 const EN_Contacts = [
     { id: "firstName", label: "FIRSTNAME", minlength: "5", maxlength: "10" },
