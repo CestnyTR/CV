@@ -381,7 +381,7 @@ input:valid~label {
 
 textarea {
     width: 700px !important;
-    ;
+    
     height: 300px !important;
     resize: none;
 }
@@ -645,38 +645,397 @@ button:hover .button-text {
     opacity: 0;
 }
 
+/*!responsive desing  */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: red !important;
+ 
+    .menu-bar li {
+        display: none;
+    }
+
+    #me-pic {
+        display: none;
+    }
+
+    #me-info {
+        font-size: large;
+        width: 100%;
+        height: auto !important;
+        ;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        text-transform: capitalize;
+    }
+
+    .certificateDate {
+        height: 100%;
+        width: auto;
+    }
+
+    .certificateName {
+        height: 100%;
+        width: auto;
+    }
+
+    .certificateNumber {
+        display: none;
+    }
+
+    .certificationInstitution {
+        height: 100%;
+        width: auto;
+
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        text-transform: capitalize;
+        text-indent: 0%;
+    }
+
+    .schoolYear {
+        height: 100%;
+        padding-top: 10%;
+        width: auto;
+    }
+
+    .schoolName {
+
+        height: 100%;
+        width: auto;
+    }
+
+    .schoolDegree {
+        text-align: center;
+        height: 100%;
+        padding-top: 10%;
+
+        width: auto;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        text-transform: capitalize;
     }
     
+    .experienceTime {
+        height: 100%;
+        height: auto;
+
+    }
+
+    textarea {
+        width: 80% !important;
+        
+        height: 300px !important;
+        resize: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: green !important;
+ 
+
+    .menu-bar li {
+        display: none;
+    }
+
+    #me-pic {
+        display: none;
+    }
+
+    #me-info {
+        font-size: large;
+        width: 100%;
+        height: auto !important;
+        ;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        text-transform: capitalize;
+    }
+
+    .certificateDate {
+        height: 100%;
+        width: auto;
+    }
+
+    .certificateName {
+        height: 100%;
+        width: auto;
+    }
+
+    .certificateNumber {
+        display: none;
+    }
+
+    .certificationInstitution {
+        height: 100%;
+        width: auto;
+
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        text-transform: capitalize;
+        text-indent: 0%;
+    }
+
+    .schoolYear {
+        height: 100%;
+        padding-top: 10%;
+        width: auto;
+    }
+
+    .schoolName {
+
+        height: 100%;
+        width: auto;
+    }
+
+    .schoolDegree {
+        text-align: center;
+        height: 100%;
+        padding-top: 10%;
+
+        width: auto;
+    }
+    textarea {
+        width: 80% !important;
+        
+        height: 300px !important;
+        resize: none;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: blue !important;
+
+    #me-pic {
+        display: flex;
+    }
+    .menu-bar li {
+        display: block;
+    }
+
+
+
+    #me-info {
+        font-size: large;
+        width: 100%;
+        height: auto !important;
+        ;
+    }
+
+    .certificate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 10%;
+        text-transform: capitalize;
+    }
+
+    .certificateDate {
+        height: 100%;
+        width: 10%;
+    }
+
+    .certificateName {
+        height: 100%;
+        width: 25%;
+    }
+
+    .certificateNumber {
+        height: 100%;
+        width: 20%;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 30%;
+        text-transform: capitalize;
+    }
+
+    .schoolYear {
+        height: 100%;
+        width: 10%;
+        padding-top: 0;
+
+    }
+
+    .schoolName {
+
+        height: 100%;
+        width: 75%;
+    }
+
+    .schoolDegree {
+        text-align: center;
+        height: 100%;
+        width: 12%;
+        padding-top: 0;
+
+    }
+    textarea {
+        width: 80% !important;
+        
+        height: 300px !important;
+        resize: none;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: orange !important;
+  
+    .certificate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 10%;
+        text-transform: capitalize;
+    }
+
+    .certificateDate {
+        height: 100%;
+        width: 10%;
+    }
+
+    .certificateName {
+        height: 100%;
+        width: 25%;
+    }
+
+    .certificateNumber {
+        display: flex;
+
+        height: 100%;
+        width: 20%;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 30%;
+        text-transform: capitalize;
+    }
+
+    .schoolYear {
+        height: 100%;
+        width: 10%;
+        padding-top: 0;
+
+    }
+
+    .schoolName {
+
+        height: 100%;
+        width: 75%;
+    }
+
+    .schoolDegree {
+        text-align: center;
+        height: 100%;
+        width: 12%;
+        padding-top: 0;
+
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: pink !important;
+  
+
+    .certificate {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 10%;
+        text-transform: capitalize;
     }
+
+    .certificateDate {
+        height: 100%;
+        width: 10%;
+    }
+
+    .certificateName {
+        height: 100%;
+        width: 25%;
+    }
+
+    .certificateNumber {
+        height: 100%;
+        width: 20%;
+    }
+
+    .school {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 100%;
+        height: 30%;
+        text-transform: capitalize;
+    }
+
+    .schoolYear {
+        height: 100%;
+        width: 10%;
+        padding-top: 0;
+
+    }
+
+    .schoolName {
+
+        height: 100%;
+        width: 75%;
+    }
+
+    .schoolDegree {
+        text-align: center;
+        height: 100%;
+        width: 12%;
+        padding-top: 0;
+
+    }
+
 }
