@@ -76,15 +76,6 @@ a:active {
     background-color: transparent;
 }
 
-#intro-wrap {
-    display: flex;
-    margin-left: 5%;
-    flex-direction: column;
-    width: 90%;
-    height: 100%;
-    text-align: justify;
-    text-indent: 20px;
-}
 
 #name {
     display: flex;
@@ -109,15 +100,6 @@ a:active {
     height: 100%;
 }
 
-#me-pic {
-    width: 45%;
-    height: 100%;
-}
-
-#me-pic img {
-    width: 80%;
-    height: 60%;
-}
 
 .header {
     width: 100%;
@@ -398,14 +380,14 @@ button {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-   }
-   
-   button.learn-more {
+}
+
+button.learn-more {
     width: 12rem;
     height: auto;
-   }
-   
-   button.learn-more .circle {
+}
+
+button.learn-more .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -414,26 +396,26 @@ button {
     height: 3rem;
     background: #282936;
     border-radius: 1.625rem;
-   }
-   
-   button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     background: #fff;
-   }
-   
-   button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
-   }
-   
-   button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.29rem;
@@ -443,9 +425,9 @@ button {
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
     transform: rotate(45deg);
-   }
-   
-   button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -459,20 +441,20 @@ button {
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
-   }
-   
-   button:hover .circle {
+}
+
+button:hover .circle {
     width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
     background: #fff;
     transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
+}
+
+button:hover .button-text {
     color: #fff;
-   }
+}
 
 .btn {
     position: relative;
@@ -581,7 +563,7 @@ button {
 .dropbtn {
     cursor: pointer;
     padding: 16px;
-    
+
     font-size: 16px;
     border: none;
 }
@@ -622,7 +604,7 @@ button {
 .dropbtnLang {
 
     cursor: pointer;
-    padding: 16px;    
+    padding: 16px;
     font-size: 16px;
     border: none;
 }
@@ -630,16 +612,168 @@ button {
 .dropbtnTheme {
 
     cursor: pointer;
-    padding: 16px;    
+    padding: 16px;
     font-size: 16px;
     border: none;
 }
-#langShow{
-    display: none;
-    opacity: 0;
-}
-#themeShow{
+
+#langShow {
     display: none;
     opacity: 0;
 }
 
+#themeShow {
+    display: none;
+    opacity: 0;
+}
+
+#menu-list {
+    opacity: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #intro-wrap {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #menu-list {
+        opacity: 0;
+    }
+
+    #me-pic {
+        display: none;
+        opacity: 0;
+    }
+
+    #me-info {
+        width: 90%;
+        min-height: 100%;
+        max-height: auto;
+        margin-right: 10%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #intro-wrap {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #menu-list {
+        opacity: 0;
+    }
+
+    #me-pic {
+        display: none;
+        opacity: 0;
+    }
+
+    #me-info {
+        width: 90%;
+        min-height: 100%;
+        max-height: auto;
+        margin-right: 10%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #intro-wrap {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #menu-list {
+        opacity: 0;
+
+    }
+
+    #me-pic {
+        display: none;
+        opacity: 0;
+    }
+
+    #me-info {
+        width: 90%;
+        min-height: 100%;
+        max-height:auto;
+        margin-right: 10%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #intro-wrap {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #menu-list {
+        opacity: 1;
+    }
+
+    #me-pic {
+        display: flex;
+        opacity: 1;
+        width: 45%;
+        height: 100%;
+    }
+    
+    #me-pic img {
+        width: 80%;
+        height: 60%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #intro-wrap {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        text-align: justify;
+        text-indent: 20px;
+    }
+
+    #menu-list {
+        opacity: 1;
+    }
+    #me-pic {
+        display: flex;
+        opacity: 1;
+        width: 45%;
+        height: 100%;
+    }
+    
+    #me-pic img {
+        width: 80%;
+        height: 60%;
+    }
+    
+}
