@@ -27,10 +27,10 @@ const TR_MeInfo = [
     { id: 3, info: "  Bu sozlerle sadece yaptigim işlerden değil ayni zamanda neyi nasil elde etmek istedigime de vurgulama amacina ulasarak bitirecegimize emin olabilirsiniz: Kaliteli projelerde profesyonel sonuclara ulasmayla beraber orta-ust duzeydeki teknoloji becerisiyle donatılmış bir insan olarak tam anlaminda kariyerime devam ediyorum!" }
 ]
 const TR_VideoProjectInfo = [
-    { id: 1, projectName: "Zombi Oyunu", projectID: "ZombieGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/I_yWLWi_Zm8" },
-    { id: 2, projectName: "2D Platform Oyunu", projectID: "2DPlatformGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/q3xA2NjmzSk" },
-    { id: 3, projectName: "3D Unity oyunu", projectID: "3DGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/OyGkYBsPvCE"  },
-    { id: 4, projectName: "3D UNREAL ENGİNE 5 Jet Uçuş Oyunu", projectID: "UE5JetFlight", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/HqkyMcq5jUo" }
+    { id: 1, projectName: "Zombi Oyunu", projectID: "ZombieGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/I_yWLWi_Zm8" },
+    { id: 2, projectName: "2D Platform Oyunu", projectID: "2DPlatformGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/q3xA2NjmzSk" },
+    { id: 3, projectName: "3D Unity oyunu", projectID: "3DGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/OyGkYBsPvCE" },
+    { id: 4, projectName: "3D UNREAL ENGİNE 5 Jet Uçuş Oyunu", projectID: "UE5JetFlight", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/HqkyMcq5jUo" }
 ]
 const TR_LinkedProjectInfo = [
     { id: 1, projectName: "Photoshop Tasarımlarım", Link: "https://drive.google.com/drive/folders/1RTy6SjzyMEfllyCWfEzgsJf28Xt7YDAz", linkType: "Proje Linki" },
@@ -38,7 +38,10 @@ const TR_LinkedProjectInfo = [
     { id: 3, projectName: "C# çiftlik otomasyon sistemi", Link: "https://github1s.com/CestnyTR/CiftlikOtomasyon", linkType: "Proje Linki" },
     { id: 4, projectName: "GTA5 rp sunucuları için JS ile hazırlanmış market script", Link: "https://github1s.com/CestnyTR/GTA5-MARKET-SC", linkType: "Proje Linki" },
     { id: 5, projectName: "Word ile klavuz düzenleme", Link: "https://github1s.com/CestnyTR/handbookOfWordpress", linkType: "Proje Linki" },
-    { id: 6, projectName: "C# ASP.NET ile hazırlanmış Kullanıcı Kayıt/giriş/List sitesi", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Proje Linki" }
+    { id: 6, projectName: "C# ASP.NET ile hazırlanmış Kullanıcı Kayıt/giriş/List sitesi", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Proje Linki" },
+    { id: 7, projectName: "Basit butik web sitesi frontend", Link: "https://github1s.com/CestnyTR/basic_boutique_website", linkType: "Proje Linki" },
+    { id: 8, projectName: "Basit Saat web sitesi frontend", Link: "https://github1s.com/CestnyTR/Basic_Watches_WebSite", linkType: "Proje Linki" },
+    { id: 9, projectName: "CV web Sitesi", Link: "https://github1s.com/CestnyTR/CV", linkType: "Proje Linki" }
 
 ]
 
@@ -102,8 +105,8 @@ const Language = [
     { id: 2, lang: "TR", Language: "Turkish" }
 ]
 const Theme = [
-    { id: 1, theme:"Dark" },
-    { id: 2, theme:"Light" }
+    { id: 1, theme: "Dark" },
+    { id: 2, theme: "Light" }
 ]
 
 const EN_heads = [
@@ -121,10 +124,10 @@ const EN_MeInfo = [
     { id: 3, info: "With these words, you can be sure that we will finish by emphasizing not only the work I do, but also what I want to achieve and how: I continue my career fully as a person equipped with medium-high level technology skills, together with achieving professional results in quality projects!" }
 ]
 const EN_VideoProjectInfo = [
-    { id: 1, projectName: "Zombie Game", projectID: "ZombieGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/I_yWLWi_Zm8" },
-    { id: 2, projectName: "2D Platform Game", projectID: "2DPlatformGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/q3xA2NjmzSk" },
-    { id: 3, projectName: "3D Unity Game", projectID: "3DGame", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/OyGkYBsPvCE" },
-    { id: 4, projectName: "3D UNREAL ENGİNE 5 Fighter Jet Game", projectID: "UE5JetFlight", linkType: "Video",LinkVideo:"https://www.youtube.com/embed/HqkyMcq5jUo" }
+    { id: 1, projectName: "Zombie Game", projectID: "ZombieGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/I_yWLWi_Zm8" },
+    { id: 2, projectName: "2D Platform Game", projectID: "2DPlatformGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/q3xA2NjmzSk" },
+    { id: 3, projectName: "3D Unity Game", projectID: "3DGame", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/OyGkYBsPvCE" },
+    { id: 4, projectName: "3D UNREAL ENGİNE 5 Fighter Jet Game", projectID: "UE5JetFlight", linkType: "Video", LinkVideo: "https://www.youtube.com/embed/HqkyMcq5jUo" }
 ]
 const EN_LinkedProjectInfo = [
     { id: 1, projectName: "Photoshop Desings", Link: "https://drive.google.com/drive/folders/1RTy6SjzyMEfllyCWfEzgsJf28Xt7YDAz", linkType: "Project Link" },
@@ -132,8 +135,10 @@ const EN_LinkedProjectInfo = [
     { id: 3, projectName: "C# Farm Automation System", Link: "https://github1s.com/CestnyTR/CiftlikOtomasyon", linkType: "Project Link" },
     { id: 4, projectName: "Market script prepared with JS for GTA 5 rp servers", Link: "https://github1s.com/CestnyTR/GTA5-MARKET-SC", linkType: "Project Link" },
     { id: 5, projectName: "Guide Book", Link: "https://github1s.com/CestnyTR/handbookOfWordpress", linkType: "Project Link" },
-    { id: 6, projectName: "User Registration/Login/List site prepared with C# ASP.NET", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Project Link" }
-
+    { id: 6, projectName: "User Registration/Login/List site prepared with C# ASP.NET", Link: "https://github1s.com/CestnyTR/user-registary-inputs", linkType: "Project Link" },
+    { id: 7, projectName: "Basic boutique website frontend", Link: "https://github1s.com/CestnyTR/basic_boutique_website", linkType: "Proje Link" },
+    { id: 8, projectName: "Basic Watches Website frontend", Link: "https://github1s.com/CestnyTR/Basic_Watches_WebSite", linkType: "Proje Link" },
+    { id: 9, projectName: "CV web Sitesi", Link: "https://github1s.com/CestnyTR/CV", linkType: "Proje Link" }
 ]
 
 const EN_certificates = [
