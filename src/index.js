@@ -142,16 +142,13 @@ function choiceLanguage() {
   switch (lang) {
     case "TR":
       buildlang(TR_HamburgerMenu, TR_NavBarInfo, Language, Theme, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
-      console.log(lang)
       break;
     case "EN":
       buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
-      console.log(lang)
-
       break;
     default:
-      buildlang(EN_HamburgerMenu, EN_NavBarInfo, Language, Theme, EN_heads, EN_MeInfo, EN_VideoProjectInfo, EN_LinkedProjectInfo, talents, EN_certificates, EN_school, EN_experiences, EN_Contacts)
-      document.cookie = "lang=EN;";
+      buildlang(TR_HamburgerMenu, TR_NavBarInfo, Language, Theme, TR_heads, TR_MeInfo, TR_VideoProjectInfo, TR_LinkedProjectInfo, talents, TR_certificates, TR_school, TR_experiences, TR_Contacts)
+      document.cookie = "lang=TR;";
   }
 }
 
@@ -216,7 +213,6 @@ function LightTheme() {
 
 function choiceTheme() {
   let theme = getCookie("theme");
-  console.log(theme);
   switch (theme) {
     case "DarkTheme;":
       document.cookie = "theme=DarkTheme;";
@@ -229,10 +225,8 @@ function choiceTheme() {
       LightTheme()
       break;
     default:
-      document.cookie = "theme=LightTheme;";
-
-      LightTheme()
-
+      document.cookie = "theme=DarkTheme;";
+      DarkTheme()
       break;
   }
 }
