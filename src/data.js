@@ -81,7 +81,7 @@ const TR_experiences = [
 const TR_Contacts = [
     { id: "firstName", label: "İsim", minlength: "5", maxlength: "10" },
     { id: "surname", label: "Soyad", minlength: "5", maxlength: "10" },
-    { id: "email", label: "Mail", minlength: "5", maxlength: "20" },
+    { id: "email", label: "Mail", minlength: "5", maxlength: "50" },
     { id: "message", label: "Mesaj", maxlength: "250" },
     { id: "submit", label: "MAİL GÖNDER" }
 ]
@@ -161,7 +161,7 @@ const EN_experiences = [
 const EN_Contacts = [
     { id: "firstName", label: "FIRSTNAME", minlength: "5", maxlength: "10" },
     { id: "surname", label: "SURNAME", minlength: "5", maxlength: "10" },
-    { id: "email", label: "Mail", minlength: "5", maxlength: "20" },
+    { id: "email", label: "Mail", minlength: "5", maxlength: "50" },
     { id: "message", label: "MESSAGE", maxlength: "250" },
     { id: "submit", label: "SEND MAIL" }
 ]
