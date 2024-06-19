@@ -1,0 +1,94 @@
+{
+    "heads": {
+        "name": "Fahri AYDIN",
+        "job": "Web Tasarımcı"
+    },
+    "nav": {
+        "about-me": "Hakkımda",
+        "my-services": "Sizin İçin Yapabilceklerim",
+        "talents": "Yeteneklerim",
+        "project": "Projelerim"
+    },
+    "copyright": "<i class='fa fa-copyright'></i> 2024 Fahri (CestnyTR) AYDIN Design",
+    "about-me": {
+        "head": "Hakkımda",
+        "exp": "Merhaba , ben Fahri 2001 yılında Konyada doğdum hobilerim arasında bilgisayar oyunları ve oynamak tarih-macera kitapları okumak var kodlamaya ilgim liseden itibaren başlamıştır ve ilk günden itibaren kendimi bu işe adıyarak kendimi geliştirmeye devam ediyorum.",
+        "school-life-head": "Okul Hayatım",
+        "school-life": "Bilgisayarlara olan ilgim, lisede web tasarım bölümünde eğitim almamla başladı ve bu alanda ilerlemeye karar verdim. Bu nedenle Isparta Uygulamalı Bilimler Üniversitesi Bilgisayar Programcılığı bölümünden mezun oldum. Üniversite eğitimim boyunca kazandığım yetenekler arasında mobil programlama, ASP.NET MVC ile web tasarım, Unity ile 3D oyun yapma, veri tabanı oluşturma ve veri işleme, Arduino devre kartı tasarımı ve yazılımı gibi bilişim sektöründe kullanılan çeşitli sistemleri öğrenme ve geliştirme becerilerim bulunmaktadır. Bu alandaki bilgi ve becerilerimi sürekli olarak güncel tutmak ve geliştirmek adına çaba sarf etmekteyim.",
+        "experiences-head": "İş Tecrübelerim",
+        "experiences": "İş deneyimlerimde takım çalışmasına önem verdim ve verilen görevleri eksiksiz bir şekilde yerine getirmeye odaklandım. E-ticaret sistemleri ve oyun tasarımı konusunda deneyim kazanarak, bu alanlarda kendimi sürekli olarak geliştirmekteyim. Şu anda aktif olarak iş arayışı içerisindeyim ve bilişim sektöründe yeni projelere katkı sağlamak için fırsatlar arıyorum. İlgilendiğiniz takdirde daha detaylı bir görüşme yapmak için sabırsızlanıyorum. İlginiz için teşekkür ederim. Saygılarımla."
+    },
+    "my-services": {
+        "head": "Sizin için Yapabilceklerim",
+        "exp": "Yazılım sektörüne küçük yaştan itibaren oluşan ilgimden ötürü bir çok farklı alanda kendimi geliştirme imkanı kazandım bunlardan size bahsetmek isterim.",
+        "web-design-head": "Web Tasarım",
+        "web-design": "Html , CSS ve JavaScript dilleri ile size frontend web siteleri yapabilirim eğer detaylı bir site istiyorsanız MVC , Asp.Net ile backend kısmını tasarlayabilirm ve sql , sql lite veya mongoDB ile veri tabanınızı kurabilir ve sitenizi yayınlayabilirim.",
+        "graphic-design-head": "Grafik Tasarım",
+        "graphic-design": "Photoshop , CorelIDRAW ve İllustrator ile ürünlerinizi tasarlayabilirm ve bir dergi oluşturabilirim.",
+        "game-design-head": "Oyun tasarımları",
+        "game-design": "Unreal Engine 5 ve Unity ile size istediğiniz oyunu tasarlayabilirim.",
+        "e-commarce-design-head": "E-Ticaret",
+        "e-commarce-design": "Ürünleriniz için Seo oluşturabilirim ve Trendyol , hepsiburada , n11 gibi bir çok siteye ürünlerini yüklemeni sağlayabilirim",
+        "mobile-app-design-head": "Mobil Uygulama Tasarım",
+        "mobile-app-design": "Flutter dili ile size Android ve İos destekli bir uygulama tasarlayabilirm.",
+        "automation-head": "Otomasyon Sistemleri",
+        "automation": "C# veya java dilleri ile stok takip uygulaması , Cafe-restorant gibi işletmelerde sipariş uygulaması yazabilirim."
+    },
+    "talents": {
+        "head": "Yeteneklerim",
+        "exp": "Yazılım sektöründe bir çok alanda kendimi geliştirmeye adadım bu alanları sizinle paylaşmak ve kendi değerlendirmelerim ile ne kadar hakim olduğum konusunda sizi bilgilendirmek istiyorum.",
+        "frontend": "Kullanıcı Arayüzü dilleri",
+        "backend": "Backend dilleri",
+        "graphic-design": "Grafik Tasarım",
+        "game-devp": "Oyun Tasarımı",
+        "data-base": "Veri Tabanı",
+        "mobile-app": "Mobil Uygulama"
+    },
+    "project": {
+        "head": "Projelerim",
+        "exp": "Bugüne kadar yaptığım bazı işleri sizin ile paylaşmak isterim. Daha fazlası için  <a href='https://github.com/CestnyTR' target='_blank'><i class='fa fa-github'></i>Github</a> sayfama bakabilirsiniz.",
+        "heads": {
+            "all": "Hepsi",
+            "web-pages": "Web Siteleri",
+            "games": "Oyun Tasarımları",
+            "automation-sys": "Otomasyon Sistemleri",
+            "graphic-design": "Grafik Tasarımları"
+        },
+        "webs": {
+            "head": "Web Sitesi",
+            "backend": "Backend",
+            "frontend": "Frontend",
+            "watch-exp": "Frontend : Öğrenci ödevleri için uygulanan basit bir saat web sitesi.",
+            "boutique-exp": "Frontend : Öğrenci ödevleri için uygulanan basit bir butik web sitesi.",
+            "painter-exp": "Frontend : Boya ustası için üretilen web sitesi.",
+            "login-calc-exp": "Backend : C# dili ile geliştirilmiş Kullanıcı giriş ve bir takım hesaplamaları veri tabanına kaydedebilen uygulama.",
+            "register-exp": "Backend : C# dili ile geliştirilmiş Kullanıcı bilgilerini veri tabanına kaydeden web sitesi."
+        },
+        "game": {
+            "unity2d": "Unity 2D",
+            "unity3d": "Unity 3D",
+            "unreal-engine": "Unreal Engine",
+            "jet-title": "",
+            "jet-exp": "Unreal Engine 5.1.1 : joystick kontrolleri ile geliştirilmiş jet uçağı uçurma similasyon oyunu.",
+            "fox-title": "Platform Oyunu",
+            "fox-exp": "Unity 2D : klavye-fare kontrollü 2D Platform oyunu.",
+            "daily-title": "Sağlıklı Yaşam Similasyonu",
+            "daily-exp": "Unity 3D : Günlük görevi sistem ile bir öğrencinin günlük yapması gereken sağlıklı yaşamı teşvik edici oyun tasarımı.",
+            "zombie-title": "FPS Oynu",
+            "zombie-exp": "Unity 3D: FPS Zombi vurma similasyonu"
+        },
+        "automation": {
+            "java": "java",
+            "library-title": "Kütüphane Otomasyonu",
+            "library-exp": "Java : Üniversite Kütüphanesi kitap takip sistemi."
+        },
+        "graphic": {
+            "corel": "CorelIDRAW",
+            "photoshop": "Photoshop",
+            "magazine-title": "Dergi",
+            "magazine-exp": "Corel : Bir e-ticaret firmasına ait BToB ürün tanıtım dergisi.",
+            "card-title": "Kart Tasarımı",
+            "card-exp": "Photoshop : Kartlık tasarımı."
+        }
+    }
+}

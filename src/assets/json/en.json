@@ -1,0 +1,94 @@
+{
+    "heads": {
+        "name": "Fahri AYDIN",
+        "job": "web designer"
+    },
+    "nav": {
+        "about-me": "About Me",
+        "my-services": "My Services",
+        "talents": "My Talents",
+        "project": "My Projects"
+    },
+    "copyright": "<i class='fa fa-copyright'></i> 2024 Fahri (CestnyTR) AYDIN Design",
+    "about-me": {
+        "head": "About Me",
+        "exp": "Hello, I'm Fahri. I was born in Konya in 2001. My hobbies include playing computer games and reading history-adventure books. My interest in coding started in high school, and since then, I have been dedicating myself to this field and continuously improving my skills.",
+        "school-life-head": "My School Life",
+        "school-life": "My interest in computers began with my education in the web design department in high school, and I decided to pursue this field. Therefore, I graduated from Isparta University of Applied Sciences with a degree in Computer Programming. During my university education, I gained skills in mobile programming, web design with ASP.NET MVC, creating 3D games with Unity, database creation and processing, Arduino circuit board design and software, and various other systems used in the IT sector. I am committed to continuously updating and improving my knowledge and skills in this field.",
+        "experiences-head": "My Work Experiences",
+        "experiences": "In my work experiences, I have emphasized teamwork and focused on completing the assigned tasks flawlessly. I have gained experience in e-commerce systems and game design, and I am constantly developing myself in these areas. I am currently actively seeking job opportunities and looking for opportunities to contribute to new projects in the IT sector. I am looking forward to discussing further details if you are interested. Thank you for your attention. Best regards."
+    },
+    "my-services": {
+        "head": "What I'm Good At",
+        "exp": "Due to my interest in the software industry from a young age, I have had the opportunity to develop myself in many different areas, and I would like to share these with you.",
+        "web-design-head": "Web Design",
+        "web-design": "I can create frontend websites for you using HTML, CSS, and JavaScript languages. If you want a detailed site, I can design the backend with MVC and ASP.NET and set up your database with SQL, SQLite, or MongoDB, and publish your site.",
+        "graphic-design-head": "Graphic Design",
+        "graphic-design": "I can design your products and create a magazine using Photoshop, CorelDRAW, and Illustrator.",
+        "game-design-head": "Game Design",
+        "game-design": "I can design the game you want using Unreal Engine 5 and Unity.",
+        "e-commarce-design-head": "E-Commerce",
+        "e-commarce-design": "I can create SEO for your products and help you upload your products to many sites such as Trendyol, Hepsiburada, and n11.",
+        "mobile-app-design-head": "Mobile App Design",
+        "mobile-app-design": "I can design an Android and iOS supported application for you using the Flutter language.",
+        "automation-head": "Automation Systems",
+        "automation": "I can write stock tracking applications or order applications for businesses such as cafes and restaurants using C# or Java languages."
+    },
+    "talents": {
+        "head": "My Talents",
+        "exp": "I have dedicated myself to developing skills in many areas of the software industry. I would like to share these areas with you and inform you about how proficient I am in them based on my own evaluations.",
+        "frontend": "Frontend Languages",
+        "backend": "Backend Languages",
+        "graphic-design": "Graphic Design",
+        "game-devp": "Game Design",
+        "data-base": "Database",
+        "mobile-app": "Mobile Application"
+    },
+    "project": {
+        "head": "My Projects",
+        "exp": "I would like to share some of the work I have done so far with you. For more, you can check out my <a href='https://github.com/CestnyTR' target='_blank'><i class='fa fa-github'></i>Github page.</a>",
+        "heads": {
+            "all": "All",
+            "web-pages": "Web Sites",
+            "games": "Game Designs",
+            "automation-sys": "Automation Systems",
+            "graphic-design": "Graphic Designs"
+        },
+        "webs": {
+            "head": "Web Site",
+            "backend": "Backend",
+            "frontend": "Frontend",
+            "watch-exp": "Frontend: A simple clock website implemented for student assignments.",
+            "boutique-exp": "Frontend: A simple boutique website implemented for student assignments.",
+            "painter-exp": "Frontend: A website produced for a painter.",
+            "login-calc-exp": "Backend: An application developed with C# that can record user login and some calculations into the database.",
+            "register-exp": "Backend: A website developed with C# that records user information into the database."
+        },
+        "game": {
+            "unity2d": "Unity 2D",
+            "unity3d": "Unity 3D",
+            "unreal-engine": "Unreal Engine",
+            "jet-title": "Jet Simulation",
+            "jet-exp": "Unreal Engine 5.1.1: A jet flight simulation game developed with joystick controls.",
+            "fox-title": "Platform Game",
+            "fox-exp": "Unity 2D: Platform game controlled by keyboard and mouse.",
+            "daily-title": "Healthy Life Simulation",
+            "daily-exp": "Unity 3D: A game design encouraging a healthy lifestyle for a student with daily task system.",
+            "zombie-title": "FPS Game",
+            "zombie-exp": "Unity 3D: An FPS zombie shooting simulation."
+        },
+        "automation": {
+            "java": "Java",
+            "library-title": "Library Automation",
+            "library-exp": "Java: A book tracking system for the university library."
+        },
+        "graphic": {
+            "corel": "CorelDRAW",
+            "photoshop": "Photoshop",
+            "magazine-title": "Magazine",
+            "magazine-exp": "Corel: A B2B product promotion magazine for an e-commerce company.",
+            "card-title": "Card Design",
+            "card-exp": "Photoshop: Cardholder design."
+        }
+    }
+}

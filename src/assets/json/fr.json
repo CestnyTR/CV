@@ -1,0 +1,94 @@
+{
+    "heads": {
+        "name": "Fahri AYDIN",
+        "job": "Concepteur Web"
+    },
+    "nav": {
+        "about-me": "À propos de moi",
+        "my-services": "Mes Services",
+        "talents": "Mes Talents",
+        "project": "Mes Projets"
+    },
+    "copyright": "<i class='fa fa-copyright'></i> 2024 Fahri (CestnyTR) AYDIN Design",
+    "about-me": {
+        "head": "À propos de moi",
+        "exp": "Bonjour, je suis Fahri. Je suis né à Konya en 2001. Mes passe-temps incluent jouer à des jeux vidéo et lire des livres d'histoire et d'aventure. Mon intérêt pour la programmation a commencé au lycée, et depuis lors, je me consacre à ce domaine et continue d'améliorer mes compétences.",
+        "school-life-head": "Ma Vie Scolaire",
+        "school-life": "Mon intérêt pour les ordinateurs a commencé avec mon éducation dans le département de conception web au lycée, et j'ai décidé de poursuivre dans ce domaine. J'ai donc obtenu un diplôme en programmation informatique de l'Université des Sciences Appliquées d'Isparta. Pendant mes études universitaires, j'ai acquis des compétences en programmation mobile, conception web avec ASP.NET MVC, création de jeux 3D avec Unity, création et traitement de bases de données, conception et programmation de circuits Arduino, et divers autres systèmes utilisés dans le secteur informatique. Je m'engage à continuellement mettre à jour et améliorer mes connaissances et compétences dans ce domaine.",
+        "experiences-head": "Mes Expériences Professionnelles",
+        "experiences": "Dans mes expériences professionnelles, j'ai mis l'accent sur le travail en équipe et me suis concentré sur l'accomplissement des tâches assignées sans faute. J'ai acquis de l'expérience dans les systèmes de commerce électronique et la conception de jeux, et je me développe constamment dans ces domaines. Je suis actuellement à la recherche d'opportunités d'emploi et je cherche des occasions de contribuer à de nouveaux projets dans le secteur informatique. J'ai hâte de discuter plus en détail si vous êtes intéressé. Merci pour votre attention. Cordialement."
+    },
+    "my-services": {
+        "head": "Ce en quoi je suis bon",
+        "exp": "En raison de mon intérêt pour l'industrie du logiciel depuis mon plus jeune âge, j'ai eu l'occasion de me développer dans de nombreux domaines différents, et je voudrais les partager avec vous.",
+        "web-design-head": "Conception Web",
+        "web-design": "Je peux créer des sites web frontend pour vous en utilisant les langages HTML, CSS et JavaScript. Si vous voulez un site détaillé, je peux concevoir le backend avec MVC et ASP.NET, configurer votre base de données avec SQL, SQLite ou MongoDB, et publier votre site.",
+        "graphic-design-head": "Conception Graphique",
+        "graphic-design": "Je peux concevoir vos produits et créer un magazine en utilisant Photoshop, CorelDRAW et Illustrator.",
+        "game-design-head": "Conception de Jeux",
+        "game-design": "Je peux concevoir le jeu que vous souhaitez en utilisant Unreal Engine 5 et Unity.",
+        "e-commarce-design-head": "Commerce Électronique",
+        "e-commarce-design": "Je peux créer du SEO pour vos produits et vous aider à télécharger vos produits sur de nombreux sites tels que Trendyol, Hepsiburada et n11.",
+        "mobile-app-design-head": "Conception d'Applications Mobiles",
+        "mobile-app-design": "Je peux concevoir une application compatible Android et iOS pour vous en utilisant le langage Flutter.",
+        "automation-head": "Systèmes d'Automatisation",
+        "automation": "Je peux écrire des applications de suivi des stocks ou des applications de commande pour des entreprises telles que des cafés et des restaurants en utilisant les langages C# ou Java."
+    },
+    "talents": {
+        "head": "Mes Talents",
+        "exp": "Je me suis consacré au développement de compétences dans de nombreux domaines de l'industrie du logiciel. Je voudrais partager ces domaines avec vous et vous informer de ma maîtrise de ceux-ci en fonction de mes propres évaluations.",
+        "frontend": "Langages Frontend",
+        "backend": "Langages Backend",
+        "graphic-design": "Conception Graphique",
+        "game-devp": "Conception de Jeux",
+        "data-base": "Base de Données",
+        "mobile-app": "Application Mobile"
+    },
+    "project": {
+        "head": "Mes Projets",
+        "exp": "Je voudrais partager certains des travaux que j'ai réalisés jusqu'à présent avec vous. Pour plus d'informations, vous pouvez consulter ma page <a href='https://github.com/CestnyTR' target='_blank'><i class='fa fa-github'></i>GitHub.</a>",
+        "heads": {
+            "all": "Tous",
+            "web-pages": "Sites Web",
+            "games": "Conceptions de Jeux",
+            "automation-sys": "Systèmes d'Automatisation",
+            "graphic-design": "Conceptions Graphiques"
+        },
+        "webs": {
+            "head": "Site Web",
+            "backend": "Backend",
+            "frontend": "Frontend",
+            "watch-exp": "Frontend : Un site web d'horloge simple implémenté pour les devoirs des étudiants.",
+            "boutique-exp": "Frontend : Un site web de boutique simple implémenté pour les devoirs des étudiants.",
+            "painter-exp": "Frontend : Un site web produit pour un peintre.",
+            "login-calc-exp": "Backend : Une application développée avec C# qui peut enregistrer la connexion utilisateur et certains calculs dans la base de données.",
+            "register-exp": "Backend : Un site web développé avec C# qui enregistre les informations des utilisateurs dans la base de données."
+        },
+        "game": {
+            "unity2d": "Unity 2D",
+            "unity3d": "Unity 3D",
+            "unreal-engine": "Unreal Engine",
+            "jet-title": "Simulation de Jet",
+            "jet-exp": "Unreal Engine 5.1.1 : Un jeu de simulation de vol de jet développé avec des commandes de joystick.",
+            "fox-title": "Jeu de Plateforme",
+            "fox-exp": "Unity 2D : Jeu de plateforme contrôlé par clavier et souris.",
+            "daily-title": "Simulation de Vie Saine",
+            "daily-exp": "Unity 3D : Un jeu encourageant un mode de vie sain pour un étudiant avec un système de tâches quotidiennes.",
+            "zombie-title": "Jeu FPS",
+            "zombie-exp": "Unity 3D : Une simulation de tir de zombies FPS."
+        },
+        "automation": {
+            "java": "Java",
+            "library-title": "Automatisation de Bibliothèque",
+            "library-exp": "Java : Un système de suivi des livres pour la bibliothèque universitaire."
+        },
+        "graphic": {
+            "corel": "CorelDRAW",
+            "photoshop": "Photoshop",
+            "magazine-title": "Magazine",
+            "magazine-exp": "Corel : Un magazine de promotion de produits B2B pour une entreprise de commerce électronique.",
+            "card-title": "Conception de Cartes",
+            "card-exp": "Photoshop : Conception de porte-cartes."
+        }
+    }
+}
