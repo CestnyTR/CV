@@ -1,3 +1,4 @@
+//! By CestnyTR 
 const translations = {
     en: null,
     tr: null,
