@@ -16,8 +16,7 @@ let translationLoaded = {
 
 function loadTranslation(language) {
     if (translations[language] === null) {
-        // fetch(`https://cestnytr.github.io/CV-2/src/assets/json/${language}.json`)
-        fetch(`http://127.0.0.1:3000/src/assets/json/${language}.json`)
+        fetch(`https://cestnytr.github.io/CV/src/assets/json/${language}.json`)
             .then(response => response.json())
             .then(data => {
                 translations[language] = data;
