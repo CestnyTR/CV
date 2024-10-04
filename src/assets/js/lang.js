@@ -1,4 +1,3 @@
-//! By CestnyTR 
 const translations = {
     en: null,
     tr: null,
@@ -22,25 +21,23 @@ function loadTranslation(language) {
             .then(data => {
                 translations[language] = data;
                 translationLoaded[language] = true;
-                setLanguage(language);  // Set the loaded language
+                setLanguage(language);
             })
             .catch(error => console.error(`Error loading ${language}.json:`, error));
     } else {
-        setLanguage(language);  // Language already loaded
+        setLanguage(language);
     }
 }
 
-// Function to set language
 function setLanguage(language) {
     if (translations[language]) {
-        localStorage.setItem('preferredLanguage', language);  // Save the language to localStorage
+        localStorage.setItem('preferredLanguage', language);
         translatePage(translations[language]);
     } else {
         console.error(`Translations for ${language} not loaded.`);
     }
 }
 
-// Function to translate the page
 function translatePage(languageData) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -61,10 +58,14 @@ function translatePage(languageData) {
     });
 }
 
-// Set language based on localStorage or default to 'en'
+// Set language based on browser language or localStorage
 document.addEventListener('DOMContentLoaded', () => {
-    const preferredLanguage = localStorage.getItem('preferredLanguage') || 'en';
-    loadTranslation(preferredLanguage);
+    const preferredLanguage = localStorage.getItem('preferredLanguage') || navigator.language.split('-')[0] || 'en';
+    const supportedLanguages = Object.keys(translations);
+    
+    // Check if the preferred language is supported, otherwise fall back to 'en'
+    const languageToLoad = supportedLanguages.includes(preferredLanguage) ? preferredLanguage : 'en';
+    loadTranslation(languageToLoad);
 });
 
 // Button event listeners to change language
